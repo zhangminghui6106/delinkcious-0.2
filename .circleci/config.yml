@@ -3,10 +3,10 @@ jobs:
   build:
     docker:
     - image: circleci/golang:1.11
-    - image: circleci/postgres:12
+    - image: circleci/postgres:9.6-alpine
       environment: # environment variables for primary container
         POSTGRES_USER: postgres
-    working_directory: /go/src/github.com/the-gigi/delinkcious
+    working_directory: delinkcious-0.2
     steps:
     - checkout
     - run:
