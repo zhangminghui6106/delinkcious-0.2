@@ -20,9 +20,9 @@ for svc in *; do
     IMAGE="${UNTAGGED_IMAGE}:${TAG}"
     echo "image: $IMAGE"
     echo "stable image: ${STABLE_IMAGE}"
-    docker build -t "$IMAGE" .
-    docker tag "${IMAGE}" "${STABLE_IMAGE}"
-    docker push "${IMAGE}"
-    docker push "${STABLE_IMAGE}"
+    sudo docker build -t "$IMAGE" .
+    sudo docker tag "${IMAGE}" "${STABLE_IMAGE}"
+    sudo docker push "${IMAGE}"
+    sudo docker push "${STABLE_IMAGE}"
 done
 cd $ROOT_DIR
