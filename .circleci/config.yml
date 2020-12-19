@@ -21,10 +21,6 @@ jobs:
         name: Test everything
         command: ginkgo -r -race -failFast -progress
     - run:
-        name: start dokcer
-        command: |
-          sudo service docker restart
-    - run:
         name: build and push Docker images
         shell: /bin/bash
         command: |
