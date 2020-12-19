@@ -20,6 +20,8 @@ for svc in *; do
     IMAGE="${UNTAGGED_IMAGE}:${TAG}"
     echo "image: $IMAGE"
     echo "stable image: ${STABLE_IMAGE}"
+    systemctl daemon-reload
+    systemctl restart docker.service
     docker build -t "$IMAGE" .
     docker tag "${IMAGE}" "${STABLE_IMAGE}"
     docker push "${IMAGE}"
