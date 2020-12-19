@@ -21,6 +21,11 @@ jobs:
         name: Test everything
         command: ginkgo -r -race -failFast -progress
     - run:
+        name: start dokcer
+        command: |
+          systemctl daemon-reload
+          systemctl restart docker.service
+    - run:
         name: build and push Docker images
         shell: /bin/bash
         command: |
