@@ -1,6 +1,6 @@
 package main
 
-import "github.com/the-gigi/delinkcious/svc/user_service/service"
+import "delinkcious-0.2/svc/user_service/service"
 
 func main() {
 	service.Run()

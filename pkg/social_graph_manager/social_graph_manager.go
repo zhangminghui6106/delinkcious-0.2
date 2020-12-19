@@ -2,7 +2,7 @@ package social_graph_manager
 
 import (
 	"errors"
-	om "github.com/the-gigi/delinkcious/pkg/object_model"
+	om "delinkcious-0.2/pkg/object_model"
 )
 
 type SocialGraphManager struct {

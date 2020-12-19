@@ -2,8 +2,8 @@ package link_manager
 
 import (
 	"errors"
-	"github.com/the-gigi/delinkcious/pkg/db_util"
-	om "github.com/the-gigi/delinkcious/pkg/object_model"
+	"delinkcious-0.2/pkg/db_util"
+	om "delinkcious-0.2/pkg/object_model"
 	"time"
 
 	"database/sql"

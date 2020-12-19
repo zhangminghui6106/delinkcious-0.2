@@ -2,13 +2,13 @@ package service
 
 import (
 	"github.com/gorilla/mux"
-	"github.com/the-gigi/delinkcious/pkg/db_util"
+	"delinkcious-0.2/pkg/db_util"
 	"log"
 	"net/http"
 
 	httptransport "github.com/go-kit/kit/transport/http"
-	lm "github.com/the-gigi/delinkcious/pkg/link_manager"
-	sgm "github.com/the-gigi/delinkcious/pkg/social_graph_client"
+	lm "delinkcious-0.2/pkg/link_manager"
+	sgm "delinkcious-0.2/pkg/social_graph_client"
 )
 
 func Run() {

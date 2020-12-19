@@ -5,7 +5,7 @@ import (
 	"context"
 	"encoding/json"
 	httptransport "github.com/go-kit/kit/transport/http"
-	om "github.com/the-gigi/delinkcious/pkg/object_model"
+	om "delinkcious-0.2/pkg/object_model"
 	"io/ioutil"
 	"net/http"
 	"net/url"

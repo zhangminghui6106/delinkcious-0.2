@@ -12,7 +12,7 @@ import (
 import (
 	"context"
 	httptransport "github.com/go-kit/kit/transport/http"
-	om "github.com/the-gigi/delinkcious/pkg/object_model"
+	om "delinkcious-0.2/pkg/object_model"
 )
 
 func NewClient(baseURL string) (om.LinkManager, error) {

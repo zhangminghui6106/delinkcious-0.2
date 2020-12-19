@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/the-gigi/delinkcious/pkg/db_util"
-	om "github.com/the-gigi/delinkcious/pkg/object_model"
-	"github.com/the-gigi/delinkcious/pkg/link_manager_client"
+	"delinkcious-0.2/pkg/db_util"
+	om "delinkcious-0.2/pkg/object_model"
+	"delinkcious-0.2/pkg/link_manager_client"
 	"context"
 	_ "github.com/lib/pq"
 	"log"
