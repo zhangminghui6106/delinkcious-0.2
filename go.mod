@@ -17,8 +17,12 @@ require (
 	github.com/mattn/go-sqlite3 v1.10.0 // indirect
 	github.com/nxadm/tail v1.4.5 // indirect
 	github.com/onsi/ginkgo v1.14.2
-	github.com/onsi/gomega v1.10.1
+	github.com/onsi/gomega v1.10.4
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/the-gigi/delinkcious v0.0.0-20200922233900-2a5edecedceb
+	golang.org/x/net v0.0.0-20201216054612-986b41b23924 // indirect
 	golang.org/x/sys v0.0.0-20201218084310-7d0127a74742 // indirect
+	golang.org/x/text v0.3.4 // indirect
+	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
+	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
