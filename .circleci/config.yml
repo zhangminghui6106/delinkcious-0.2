@@ -23,9 +23,6 @@ jobs:
     - setup_remote_docker:
         version: 19.03.13
     - run:
-        name: docker version
-        command: docker version && docker ps
-    - run:
         name: build and push Docker images
         shell: /bin/bash
         command: |
