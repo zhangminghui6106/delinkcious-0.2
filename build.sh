@@ -24,7 +24,9 @@ for svc in *; do
     echo "stable image: ${STABLE_IMAGE}"
     echo "su root"
     cat /etc/issue
+    whoami
     echo "sudo systemctl status docker"
+    docker version
     sudo systemctl status docker
     echo "sudo systemctl start docker"
     sudo systemctl start docker
