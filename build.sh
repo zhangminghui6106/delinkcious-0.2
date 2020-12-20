@@ -22,14 +22,11 @@ for svc in *; do
     echo "svc:$svc"
     echo "image: $IMAGE"
     echo "stable image: ${STABLE_IMAGE}"
-    echo "su root"
     cat /etc/issue
     whoami
     echo "sudo systemctl status docker"
     docker version
-    sudo systemctl status docker
     echo "sudo systemctl start docker"
-    sudo systemctl start docker
     echo "docker started"
     sudo docker build -t "$IMAGE" .
     sudo docker tag "${IMAGE}" "${STABLE_IMAGE}"
