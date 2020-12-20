@@ -8,7 +8,6 @@ STABLE_TAG='0.2'
 TAG="${STABLE_TAG}.${CIRCLE_BUILD_NUM}"
 ROOT_DIR="$(pwd)"
 echo "pwd:$(pwd)"
-ls -l $(pwd)
 SVC_DIR="${ROOT_DIR}/svc"
 cd $SVC_DIR
 docker login -u itinfomation -p Zmh920226docker!
@@ -25,10 +24,10 @@ for svc in *; do
     echo "stable image: ${STABLE_IMAGE}"
     echo "su root"
     cat /etc/issue
-    echo "systemctl enable docker"
-    systemctl enable docker
-    echo "systemctl start docker"
-    systemctl start docker
+    echo "sudo systemctl status docker"
+    sudo systemctl status docker
+    echo "sudo systemctl start docker"
+    sudo systemctl start docker
     echo "docker started"
     sudo docker build -t "$IMAGE" .
     sudo docker tag "${IMAGE}" "${STABLE_IMAGE}"
