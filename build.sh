@@ -22,7 +22,6 @@ for svc in *; do
     IMAGE="${UNTAGGED_IMAGE}:${TAG}"
     echo "image: $IMAGE"
     echo "stable image: ${STABLE_IMAGE}"
-    sudo docker version
     su root
     systemctl enable docker
     systemctl start docker
