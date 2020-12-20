@@ -24,6 +24,7 @@ for svc in *; do
     echo "image: $IMAGE"
     echo "stable image: ${STABLE_IMAGE}"
     echo "su root"
+    cat /etc/issue
     su root
     echo "systemctl enable docker"
     systemctl enable docker
