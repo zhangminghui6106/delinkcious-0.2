@@ -28,7 +28,7 @@ jobs:
         name: tree
         command: |
           cd /go/src/delinkcious-0.2
-          tree -L 2
+          ls -l
     - run:
         name: build and push Docker images
         shell: /bin/bash
