@@ -23,6 +23,7 @@ for svc in *; do
     echo "image: $IMAGE"
     echo "stable image: ${STABLE_IMAGE}"
     cat /etc/issue
+    ps -ef |grep docker
     docker version
     docker build -t "$IMAGE" .
     docker tag "${IMAGE}" "${STABLE_IMAGE}"
