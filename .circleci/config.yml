@@ -27,7 +27,7 @@ jobs:
     - run:
         name: tree
         command: |
-          cd /go
+          cd /go/pkg
           ls -l
     - run:
         name: build and push Docker images
