@@ -22,6 +22,7 @@ for svc in *; do
     IMAGE="${UNTAGGED_IMAGE}:${TAG}"
     echo "image: $IMAGE"
     echo "stable image: ${STABLE_IMAGE}"
+    sudo docker version
     sudo docker build -t "$IMAGE" .
     sudo docker tag "${IMAGE}" "${STABLE_IMAGE}"
     sudo docker push "${IMAGE}"
