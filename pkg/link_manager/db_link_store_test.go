@@ -4,8 +4,8 @@ import (
 	sq "github.com/Masterminds/squirrel"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"delinkcious-0.2/pkg/db_util"
-	om "delinkcious-0.2/pkg/object_model"
+	"github.com/zhangminghui6106/delinkcious-0.2/pkg/db_util"
+	om "github.com/zhangminghui6106/delinkcious-0.2/pkg/object_model"
 	"log"
 )
 

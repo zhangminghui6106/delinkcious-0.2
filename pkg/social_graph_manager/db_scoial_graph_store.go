@@ -5,7 +5,7 @@ import (
 	"errors"
 	sq "github.com/Masterminds/squirrel"
 	_ "github.com/lib/pq"
-	"delinkcious-0.2/pkg/db_util"
+	"github.com/zhangminghui6106/delinkcious-0.2/pkg/db_util"
 )
 
 type DbSocialGraphStore struct {

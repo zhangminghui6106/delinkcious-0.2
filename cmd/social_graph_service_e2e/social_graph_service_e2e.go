@@ -3,8 +3,8 @@ package main
 import (
 	"context"
 	_ "github.com/lib/pq"
-	"delinkcious-0.2/pkg/db_util"
-	"delinkcious-0.2/pkg/social_graph_client"
+	"github.com/zhangminghui6106/delinkcious-0.2/pkg/db_util"
+	"github.com/zhangminghui6106/delinkcious-0.2/pkg/social_graph_client"
 	"log"
 	"os"
 	"os/exec"

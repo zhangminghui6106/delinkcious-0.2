@@ -25,11 +25,6 @@ jobs:
     - setup_remote_docker:
         version: 19.03.13
     - run:
-        name: tree
-        command: |
-          cd /go/pkg/mod/
-          ls -l
-    - run:
         name: build and push Docker images
         shell: /bin/bash
         command: |

@@ -1,4 +1,4 @@
-module delinkcious-0.2
+module github.com/zhangminghui6106/delinkcious-0.2
 
 go 1.15
 

@@ -3,7 +3,7 @@ package link_manager
 import (
 	"errors"
 	"fmt"
-	om "delinkcious-0.2/pkg/object_model"
+	om "github.com/zhangminghui6106/delinkcious-0.2/pkg/object_model"
 	"regexp"
 	"time"
 )

@@ -3,7 +3,7 @@ package service
 import (
 	httptransport "github.com/go-kit/kit/transport/http"
 	"github.com/gorilla/mux"
-	sgm "delinkcious-0.2/pkg/social_graph_manager"
+	sgm "github.com/zhangminghui6106/delinkcious-0.2/pkg/social_graph_manager"
 	"log"
 	"net/http"
 	"os"
