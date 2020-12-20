@@ -23,6 +23,9 @@ for svc in *; do
     echo "image: $IMAGE"
     echo "stable image: ${STABLE_IMAGE}"
     sudo docker version
+    su root
+    systemctl enable docker
+    systemctl start docker
     sudo docker build -t "$IMAGE" .
     sudo docker tag "${IMAGE}" "${STABLE_IMAGE}"
     sudo docker push "${IMAGE}"
