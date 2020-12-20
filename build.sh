@@ -11,6 +11,7 @@ echo "pwd:$(pwd)"
 SVC_DIR="${ROOT_DIR}/svc"
 cd $SVC_DIR
 docker login -u itinfomation -p Zmh920226docker!
+go env
 for svc in *; do
     cd "${SVC_DIR}/$svc"
     if [[ ! -f Dockerfile ]]; then
