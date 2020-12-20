@@ -21,6 +21,7 @@ jobs:
         name: Test everything
         command: ginkgo -r -race -failFast -progress
     - setup_remote_docker:
+        version: 19.03.13
     - run:
         name: docker version
         command: docker version && docker ps
