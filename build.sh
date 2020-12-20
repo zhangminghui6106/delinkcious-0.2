@@ -20,10 +20,14 @@ for svc in *; do
     UNTAGGED_IMAGE=$(echo "${IMAGE_PREFIX}/delinkcious-${svc}" | sed -e 's/_/-/g' -e 's/-service//g')
     STABLE_IMAGE="${UNTAGGED_IMAGE}:${STABLE_TAG}"
     IMAGE="${UNTAGGED_IMAGE}:${TAG}"
+    echo "svc:$svc"
     echo "image: $IMAGE"
     echo "stable image: ${STABLE_IMAGE}"
+    echo "su root"
     su root
+    echo "systemctl enable docker"
     systemctl enable docker
+    echo "systemctl start docker"
     systemctl start docker
     echo "docker started"
     sudo docker build -t "$IMAGE" .
