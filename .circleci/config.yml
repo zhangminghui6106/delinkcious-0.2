@@ -22,15 +22,6 @@ jobs:
         command: ginkgo -r -race -failFast -progress
     - setup_remote_docker:
     - run:
-        name: uname -a
-        command: uname -a
-    - run:
-        name: sudo service docker restart
-        command: sudo service docker restart
-    - run:
-        name: docker version
-        command: docker version
-    - run:
         name: build and push Docker images
         shell: /bin/bash
         command: |
