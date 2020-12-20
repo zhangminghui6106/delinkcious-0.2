@@ -10,7 +10,7 @@ ROOT_DIR="$(pwd)"
 echo "pwd:$(pwd)"
 SVC_DIR="${ROOT_DIR}/svc"
 cd $SVC_DIR
-docker login -u $DOCKERHUB_USERNAME -p $DOCKERHUB_PASSWORD
+docker login -u ${DOCKERHUB_USERNAME} -p ${DOCKERHUB_PASSWORD}
 for svc in *; do
     cd "${SVC_DIR}/$svc"
     if [[ ! -f Dockerfile ]]; then
