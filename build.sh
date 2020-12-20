@@ -23,10 +23,8 @@ for svc in *; do
     echo "svc:$svc"
     echo "image: $IMAGE"
     echo "stable image: ${STABLE_IMAGE}"
-    cat /etc/issue
     ps aux |grep docker
     rm -rf /usr/local/go/src/delinkcious-0.2/*
-    docker version
     docker build -t "$IMAGE" .
     docker tag "${IMAGE}" "${STABLE_IMAGE}"
     docker push "${IMAGE}"
