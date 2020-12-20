@@ -10,7 +10,7 @@ jobs:
     - image: circleci/postgres:9.6-alpine
       environment: # environment variables for primary container
         POSTGRES_USER: postgres
-    working_directory: delinkcious-0.2/
+    working_directory: /go/src/delinkcious-0.2
     steps:
     - checkout
     - run:
@@ -24,6 +24,11 @@ jobs:
         command: ginkgo -r -race -failFast -progress
     - setup_remote_docker:
         version: 19.03.13
+    - run:
+        name: tree
+        command: |
+          cd /go/src/delinkcious-0.2
+          tree -L 2
     - run:
         name: build and push Docker images
         shell: /bin/bash
