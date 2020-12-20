@@ -21,6 +21,9 @@ jobs:
         name: Test everything
         command: ginkgo -r -race -failFast -progress
     - run:
+        name: uname -a
+        command: uname -a
+    - run:
         name: docker version
         command: docker version
     - run:
