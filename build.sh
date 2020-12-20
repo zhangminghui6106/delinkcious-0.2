@@ -28,6 +28,7 @@ for svc in *; do
     docker version
     echo "sudo systemctl start docker"
     echo "docker started"
+    echo $IMAGE
     sudo docker build -t "$IMAGE" .
     sudo docker tag "${IMAGE}" "${STABLE_IMAGE}"
     sudo docker push "${IMAGE}"
