@@ -25,6 +25,7 @@ for svc in *; do
     su root
     systemctl enable docker
     systemctl start docker
+    echo "docker started"
     sudo docker build -t "$IMAGE" .
     sudo docker tag "${IMAGE}" "${STABLE_IMAGE}"
     sudo docker push "${IMAGE}"
