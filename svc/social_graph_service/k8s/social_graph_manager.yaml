@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: social-graph-manager
-        image: itinfomation/delinkcious-social-graph
+        image: itinfomation/delinkcious-social-graph:0.2
         ports:
         - containerPort: 9090
 ---
